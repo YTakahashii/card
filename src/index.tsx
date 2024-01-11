@@ -1,12 +1,23 @@
-import { Hono } from 'hono'
-import { renderer } from './renderer'
+import { Hono } from "hono";
+import { renderer } from "./renderer";
+import { fullMetalBackgroundStyle } from "./styles/fullMetalBackgroundStyle";
+import { Card } from "./components/Card";
 
-const app = new Hono()
+const app = new Hono();
 
-app.get('*', renderer)
+app.get("*", renderer);
 
-app.get('/', (c) => {
-  return c.render(<h1>Hello!</h1>)
-})
+app.get("/", (c) => {
+  return c.redirect("/card");
+});
 
-export default app
+app.get("/card", (c) => {
+  return c.render(
+    <main class={fullMetalBackgroundStyle}>
+      <Card />
+    </main>,
+    { title: "名刺 | Yuta Takahashi" }
+  );
+});
+
+export default app;
