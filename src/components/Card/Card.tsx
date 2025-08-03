@@ -74,8 +74,8 @@ export const Card = () => {
           <p class={subtleStyle}>Software Engineer</p>
           <p class={subtleStyle}>
             株式会社メドレー <wbr />
-            医療プラットフォーム本部 プロダクト開発室 <wbr />
-            CLINICS第二開発グループ
+            医療プラットフォーム本部 医科診療所プロダクト開発室 <wbr />
+            AI推進グループ
           </p>
         </div>
       </div>
