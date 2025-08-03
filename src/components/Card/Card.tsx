@@ -116,6 +116,18 @@ export const Card = () => {
         </a>
       </div>
 
+      <div class={sectionGroupStyle}>
+        <h3 class={sectionTitleStyle}>Zenn</h3>
+        <a
+          href="https://zenn.dev/yuta_takahashi"
+          target="_blank"
+          rel="noopener noreferrer"
+          class={linkStyle}
+        >
+          @yuta_takahashi
+        </a>
+      </div>
+
       <p
         class={css`
           font-size: 12px;
